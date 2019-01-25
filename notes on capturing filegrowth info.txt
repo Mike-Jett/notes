@@ -1,0 +1,8 @@
+Select * from information_schema.ROUTINES where ROUTINE_DEFINITION like'%dbaDatabaseSpace%' 
+
+
+
+dbaRecordCount_spi
+dbaDatabaseSpace_spr
+
+dbaRecordCount job runs on sunday which captures the size info 

@@ -1,0 +1,6 @@
+sp_validatelogins -- “Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment.”
+	-- the system procedure uses the get_sid() function in order to match the SID of the login in AD to the SID of the login on the instance. If they do not match, then 	-- it returns that login as a row in the output
+	-- The output really only means there is a SID mismatch. Take the results and carefully decide what actions you want to take. 
+
+select table_name from INFORMATION_SCHEMA.COLUMNS where column_name = 'OrgID' and table_name not like '%_vw%'
+-- this finds each table that has a specific column

@@ -1,0 +1,248 @@
+------------------------------------------1----------------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesAdminClosures S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+
+
+-- commit tran upd1
+
+-------------------------------------------2---------------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesAdminClosures2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+
+
+-- commit tran upd1
+
+--------------------------------------------3--------------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesSufficientProof S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+
+
+-- commit tran upd1
+
+---------------------------------------------4-------------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesSufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+
+
+-- commit tran upd1
+
+----------------------------------------------5------------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 0
+
+
+-- commit tran upd1
+-----------------------------------------------6-----------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 1
+
+
+-- commit tran upd1
+
+------------------------------------------------7----------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 2
+
+
+-- commit tran upd1
+
+-------------------------------------------------8---------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 3
+
+
+-- commit tran upd1
+
+-------------------------------------------------9---------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 4
+
+
+-- commit tran upd1
+
+------------------------------------------------10----------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 5
+
+
+-- commit tran upd1
+
+-------------------------------------------------11---------------------------------------------
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 6
+
+
+-- commit tran upd1
+-------------------------------------------------12---------------------------------------------
+
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 7
+
+
+-- commit tran upd1
+
+------------------------------------------------13----------------------------------------------
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 8
+
+
+-- commit tran upd1
+
+-----------------------------------------------14-----------------------------------------------
+begin tran upd1
+
+update AM.dbo.AcctDispute
+set DisputeResolutionDate = convert(varchar(10),S.ResolutionDate,101)
+, DisputeResTypeID = S.ResolutionTypeID
+from sandbox.dsprouse.DisputesInsufficientProof2 S
+join AM.dbo.AcctDispute D on S.DisputeID = D.DisputeID
+where RIGHT(S.DisputeID,1) = 9
+
+
+-- commit tran upd1
+
+----------------------------------------------15-----------------------------------------------
+begin tran upd1
+
+WHILE EXISTS (SELECT 1 FROM AM.dbo.AcctDispute WHERE  DisputeResolutionDate is null and DisputeTypeID in (13,14,18,19,20) )
+
+BEGIN
+update top (80000) AM.dbo.AcctDispute
+set DisputeResolutionDate = AD.DisputeDate 
+, DisputeResTypeID = 23
+from AM.dbo.AcctDispute AD
+where DisputeResolutionDate is null
+and DisputeTypeID in (13,14,18,19,20)
+END
+
+
+-- commit tran upd1
+
+---------------------------------------------16-------------------------------------------------
+begin tran upd1
+
+WHILE EXISTS (SELECT 1 FROM AM.dbo.AcctDispute WHERE DisputeResponsibilityID is null)
+
+BEGIN
+update top (80000) AM.dbo.AcctDispute
+set DisputeResponsibilityID = 1
+where DisputeResponsibilityID is null
+END
+
+
+-- commit tran upd1
+
+---------------------------------------------17-------------------------------------------------
+begin tran upd1
+
+WHILE EXISTS (SELECT 1 FROM AM.dbo.AcctDispute WHERE DisputeCommunicationTypeID is null and DisputeTypeID in (18,20))
+BEGIN
+
+update top (80000) AM.dbo.AcctDispute
+set DisputeCommunicationTypeID = 2
+where DisputeCommunicationTypeID is null
+and DisputeTypeID in (18,20)
+END
+
+
+-- commit tran upd1
+---------------------------------------------18-------------------------------------------------
+begin tran upd1
+
+WHILE EXISTS (SELECT 1 FROM AM.dbo.AcctDispute WHERE DisputeCommunicationTypeID is null and DisputeTypeID not in (18,20))
+BEGIN
+
+update top (80000) AM.dbo.AcctDispute
+set DisputeCommunicationTypeID = 1
+where DisputeCommunicationTypeID is null
+and DisputeTypeID not in (18,20)
+END
+
+
+-- commit tran upd1
+
+--------------------------------------------End--------------------------------------------------
